@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.task{
+    display: inline-flex;
+    flex-direction: column;
+    margin: 5px;
+    gap: 20px;
+    border: solid 1px black;
+    padding: 20px;
+}
+
+
+.content svg {
+    border: 1px solid;
+}
+
+.content svg circle{
+    fill: #988aa1;
+}
+
+svg#shape{
+    width: 600px;
+    height: 300px;
+}
+svg#graph{
+    width: 800px;
+    height: 800px;
+}
+
+svg#graph path, line {
+    fill: none;
+    stroke: black;
+    width: 1px;
+}
+svg#graph text {
+    font: 8px Verdana;
+}
+
+
+
+#svg circle{
+    fill: #9882a1;
+    opacity: 0.6;
+}

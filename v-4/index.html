@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Вариант-4</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <script src="http://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+<div class="main">
+    <div class="task-switcher">
+        <label> Показать задачу
+            <select name="task" onchange="switchTask(this.value)">
+                <option value="task1" selected>1</option>
+                <option value="task2">2</option>
+            </select>
+        </label>
+    </div>
+
+    <div id="task1" class="task">
+        <div class="options ">
+            <form>
+                <label>Количество фигур:
+                    <input id="count" name="count" type="number" min="10" value="10">
+                </label>
+                <input id="createShape" type="button" value="Построить">
+            </form>
+        </div>
+        <div class="content">
+            <svg id="shape"></svg>
+        </div>
+    </div>
+
+    <div id="task2" class="task">
+        <div class="options ">
+            <form>
+                <div>
+                    <label>Интервал(от):
+                        <input id="from" name="from" type="number">
+                    </label><br>
+                    <label>Интервал(до):
+                        <input id="to" name="to" type="number" >
+                    </label>
+                </div>
+                <input id="createGraph" type="button" value="Построить">
+            </form>
+        </div>
+        <div class="content">
+            <svg id="graph"></svg>
+        </div>
+    </div>
+</div>
+</body>
+<script src="shapeCreator.js"></script>
+<script src="graphCreator.js"></script>
+<script src="taskSwitcher.js"></script>
+</html>
